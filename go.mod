@@ -1,6 +1,6 @@
-module github.com/apuigsech/rest-layer-sql
+module github.com/njacob1001/rest-layer-sql
 
-go 1.13
+go 1.16
 
 require (
 	github.com/apuigsech/rest-layer-sql v0.0.0-20200105084615-c5dcc6957f19
