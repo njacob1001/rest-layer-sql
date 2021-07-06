@@ -1,10 +1,10 @@
 package sqlStorage
 
 import (
-	"fmt"
-	"log"
 	"context"
 	"database/sql"
+	"fmt"
+	"log"
 
 	"github.com/rs/rest-layer/resource"
 	"github.com/rs/rest-layer/schema"
@@ -232,6 +232,7 @@ func (h *SQLHandler)Insert(ctx context.Context, items []*resource.Item) (err err
 }
 
 func (h *SQLHandler) Update(ctx context.Context, item *resource.Item, original *resource.Item) (err error) {
+	fmt.Println("TESTING FUNCIONANDO")
 	sqlQuery, sqlParams, err := buildUpdateQuery(h.tableName, item, original, h.driverName)
 	if err != nil {
 		return err
